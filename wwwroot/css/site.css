@@ -59,13 +59,54 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #388659;
+    color: white;
 }
+
+.deskImage {
+    border-radius: 25px;
+}
+
+th {
+    color: white;
+}
+
+td {
+    color: black;
+}
+
+td a {
+    color: black;
+    text-decoration: underline;
+}
+
+thead {
+    background-color:darkseagreen;
+}
+
+tbody {
+    background-color: white;
+}
+
+.link {
+    color: white;
+    text-decoration: underline;
+}
+
+.selectImage {
+    margin: 20px;
+    border-radius: 20px;
+    width: 200px;
+    height: 100px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+  background-color: white;
 }

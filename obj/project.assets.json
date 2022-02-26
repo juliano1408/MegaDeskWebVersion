@@ -7149,19 +7149,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NASCIMENTO\\.nuget\\packages\\": {}
+    "C:\\Users\\01ddg\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NASCIMENTO\\source\\repos\\MegaDeskWebVersion\\MegaDeskWebVersion.csproj",
+      "projectUniqueName": "C:\\Users\\01ddg\\source\\repos\\MegaDeskWebVersion\\MegaDeskWebVersion.csproj",
       "projectName": "MegaDeskWebVersion",
-      "projectPath": "C:\\Users\\NASCIMENTO\\source\\repos\\MegaDeskWebVersion\\MegaDeskWebVersion.csproj",
-      "packagesPath": "C:\\Users\\NASCIMENTO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NASCIMENTO\\source\\repos\\MegaDeskWebVersion\\obj\\",
+      "projectPath": "C:\\Users\\01ddg\\source\\repos\\MegaDeskWebVersion\\MegaDeskWebVersion.csproj",
+      "packagesPath": "C:\\Users\\01ddg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\01ddg\\source\\repos\\MegaDeskWebVersion\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\NASCIMENTO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\01ddg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7218,24 +7223,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.13, 5.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7244,7 +7231,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

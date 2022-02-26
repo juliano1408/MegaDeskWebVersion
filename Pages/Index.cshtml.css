@@ -1,0 +1,28 @@
+﻿html {
+    background-color: red;
+}
+
+body {
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.text-center {
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.text-center p {
+    font-size: 24px;
+}
+
+.display-4 {
+    padding-top:  150px;
+}
+
+bodyStyles {
+    background-color: red;
+}
+
+.link {
+    color: white;
+    text-decoration: underline;
+}
