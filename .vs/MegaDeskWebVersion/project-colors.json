@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "b0509605-71b9-4d39-9f1e-97a3e0628199": {
+      "ProjectGuid": "b0509605-71b9-4d39-9f1e-97a3e0628199",
+      "DisplayName": "MegaDeskWebVersion",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
