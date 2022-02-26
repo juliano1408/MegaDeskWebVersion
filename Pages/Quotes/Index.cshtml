@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{customerName?}"
 @model MegaDeskWebVersion.Pages.Quotes.IndexModel
 
 @{
@@ -10,6 +10,14 @@
 <p>
     <a class="link" asp-page="Create">Create New</a>
 </p>
+
+<form>
+    <p>
+        Customer Name: <input type="text" asp-for="CustomerName" /> &nbsp;
+        <input type="submit" value="Find Quote" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
