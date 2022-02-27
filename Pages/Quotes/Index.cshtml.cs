@@ -22,20 +22,44 @@ namespace MegaDeskWebVersion.Pages.Quotes
 
         [BindProperty(SupportsGet = true)]
         public string CustomerName { get; set; }
-       
+
+        public string CustomerNameSort { get; set; }
+        public string DateSort { get; set; }
+        public string CurrentFilter { get; set; }
+        public string CurrentSort { get; set; }
 
         public IList<DeskQuote> DeskQuote { get;set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(string sortOrder)
         {
-            var quotes = from q in _context.DeskQuote
+            CustomerNameSort = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            DateSort = sortOrder == "Date" ? "date_desc" : "Date";
+
+            IQueryable<DeskQuote> quotesIQ = from q in _context.DeskQuote
                          select q;
+
             if (!string.IsNullOrEmpty(CustomerName))
             {
-                quotes = quotes.Where(s => s.CustomerName.Contains(CustomerName));
+                quotesIQ = quotesIQ.Where(s => s.CustomerName.Contains(CustomerName));
             }
 
-            DeskQuote = await quotes.ToListAsync();
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    quotesIQ = quotesIQ.OrderByDescending(q => q.CustomerName);
+                    break;
+                //case "Date":
+                //    quotesIQ = quotesIQ.OrderBy(q => q.Date);
+                    //break;
+                //case "date_desc":
+                //    quotesIQ = quotesIQ.OrderByDescending(q => q.EnrollmentDate);
+                //    break;
+                default:
+                    quotesIQ = quotesIQ.OrderBy(q => q.CustomerName);
+                    break;
+            }
+            
+            DeskQuote = await quotesIQ.AsNoTracking().ToListAsync();
         }
     }
 }

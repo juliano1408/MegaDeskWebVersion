@@ -30,7 +30,7 @@ namespace MegaDeskWebVersion.Models
         [Required]
         public string DesktopMaterial { get; set; }
 
-        [RegularExpression(@"^(3|5|7)$")]
+        [RegularExpression(@"^(0|3|5|7)$")]
         [Required]
         public int RushOrder { get; set; }
     }
